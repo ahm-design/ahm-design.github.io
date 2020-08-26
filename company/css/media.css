@@ -1,0 +1,126 @@
+@media screen and (min-width:768px) and (max-width:1100px)
+{
+
+    #our-services .container .area 
+    {
+        width:50%;
+    }
+}
+
+@media screen and (max-width:1100px)
+{
+    /* start about us */
+    #about-us .container 
+    {
+        flex-direction: column;
+    }
+    #about-us .container .left
+    {
+        text-align: center;
+    }
+    #about-us .container .left p 
+    {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    /* contact us page */
+    #contact-us .container 
+    {
+        flex-direction: column;
+    }
+
+    #contact-us .container .contact-area  
+    {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (max-width:768px)
+{
+
+    /* start header  */
+    header .container 
+    {
+        flex-direction: column;
+    }
+
+
+
+
+    /* start fold  */
+    #fold 
+    {
+        height: 350px;
+    }
+    #fold .container h1 
+    {
+        font-size: 35px;
+    }
+
+    #fold .container p
+    {
+        font-size: 15px;
+    }
+
+
+
+    /* start ouer services   */
+    #our-services .container 
+    {
+        flex-direction: column;
+    }
+    #our-services .container .area 
+    {
+        width:100%;
+    }
+
+    /* contact us */
+    #contact-us .container form 
+    {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #contact-us  .contact-area  
+    {
+        width: 100%;
+    }
+
+
+
+
+
+
+    /*  inner fold  */
+
+    #fold-inner
+    {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+
+
+
+
+
+    /* about us page  */
+    #about-page .container 
+    {
+        flex-direction: column;
+    }
+    #about-page .container .about-area
+    {
+        width: 100%;
+    }
+}

@@ -1,0 +1,512 @@
+/* general style  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.4s linear;
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+.bf
+{
+    font-family: 'Oswald', sans-serif;
+}
+.bc
+{
+    color: cornflowerblue;
+}
+.sc{
+    color: #fff;
+}
+.bgc
+{
+    background-color: cornflowerblue;
+}
+.container 
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.pointer 
+{
+    cursor: pointer;
+}
+
+
+/* start header section  */
+header
+{
+    border-bottom: 5px solid #222;
+    background-color: #eee;
+}
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 0; */
+}
+header .container .logo
+{
+    height: 70px;
+}
+header .container .logo img 
+{
+    width: 170px;
+    height: 100%;
+}
+header .container nav ul
+{
+    display: flex;
+}
+header .container nav ul li 
+{
+    margin-right: 35px;
+}
+header .container nav ul li:last-child 
+{
+    margin-right: 0;
+}
+header .container nav ul li a 
+{
+    font-size: 20px;
+    color: #4B4957;
+}
+header .container nav ul li a.active
+{
+    color:cornflowerblue;
+}
+
+header .container nav ul li a:hover 
+{
+    color:cornflowerblue;
+}
+/* Style the search field */
+nav input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  nav button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  nav::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/*icon contact*/
+.icon-bar {
+    position: fixed;
+    top: 30%;
+    left:0;
+    width:5%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index:1000;
+  
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    border-radius:20px;
+    margin:5px;
+  }
+  
+  .icon-bar a:hover {
+      background-color: #000;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .youtube {
+    background: red;
+    color: white;
+  }
+/*icon contact*/
+
+/* end header  */
+
+
+
+
+
+
+/* start fold section  */
+
+
+#fold 
+{
+    background-image: url(../images/bg1.jpg);
+    height: 600px;
+}
+
+#fold .container 
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+#fold .container h1 
+{
+    font-size: 55px;
+    position: relative;
+    animation-name: leftToRight;
+    animation-duration: 2s;
+}
+
+
+
+#fold .container p
+{
+    font-size: 25px;
+    position: relative;
+
+
+    animation-name: rightToLeft;
+    animation-duration: 2s;
+}
+
+
+/* end fold section  */
+.head-section
+{
+    padding: 25px;
+    text-align: center;
+}
+.head-section h2 
+{
+    letter-spacing: 4px;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+/*  start  services   section  */
+
+
+#our-services .container 
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#our-services .container  .area 
+{
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 25%;
+    
+}
+#our-services .container  .area .area-image
+{
+    overflow: hidden;
+}
+#our-services .container  .area .area-image img 
+{
+    max-width: 100%;
+    
+}
+#our-services .container  .area .area-image img:hover 
+{
+    opacity: 0.5;
+    transform: scale(1.3,1.3);
+}
+#our-services .container .area .area-content h3 
+{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+#our-services .container .area .area-content .area-btn
+{
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    background-color: rgba(2,2,2,0.5);
+    cursor: pointer;
+    color: #fff;
+}
+
+#our-services .container .area .area-content .area-btn:hover 
+{
+    background-color: #eee;
+    color: #222;
+}
+
+
+
+
+
+/*start css code pagination*/
+
+.list
+{
+    margin-left: 450px;
+}
+.list ul li {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px 7px;
+    font-size: 25px;
+    height: 40px;
+    width: 25px;
+    text-align: center;
+    float: left;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: #E8491D;
+    display: block;
+    line-height: 50px;
+}
+
+.list ul .active {
+    background-color: #35424A;
+    color: #fff;
+}
+
+.list ul .active a {
+    color: #fff;
+}
+
+
+/*end css code pagination*/ 
+
+
+
+
+
+
+
+
+/* start contact us section  */
+
+#contact-us .container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us .container form 
+{
+    width: 70%;
+    padding: 40px;
+}
+
+#contact-us .container form .form-group label
+{
+    display: block;
+    margin-bottom: 15px;
+}
+#contact-us .container form .form-group input,#contact-us .container form .form-group textarea 
+{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+
+
+
+
+
+
+/* start footer  */
+footer
+{
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #4B4957;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Inner Pages */
+
+
+
+
+
+#fold-inner
+{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+
+#about-page .container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-page .container .about-area
+{
+    text-align: center;
+    margin: 50px 0;
+    position: relative;
+    animation-name: bottomTotop;
+    animation-duration: 2s;
+
+}
+#about-page .container .about-area .about-icon img 
+{
+    max-width: 100%;
+    border-radius: 50%;
+    border:1px solid #222;
+    width: 250px;
+}
+
+#about-page .container .about-area .about-content h3 
+{
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+#about-page .container .about-area .about-content
+{
+    padding:25px;
+}
+
+
+
+
+
+
+
+/* contact us page  */
+
+#contact-us .container .contact-area 
+{
+    padding: 50px 20px;
+    text-align: center;
+    border: 2px solid #4B4957;
+    margin: 15px;
+    border-radius: 10px;
+    width: 30%;
+
+    position: relative;
+    animation-name: topTobottom;
+    animation-duration: 2s;
+}
+#contact-us .container .contact-area p 
+{
+    margin:25px;
+}
+#contact-us .container .contact-area p:first-child
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+#contact-us .container .contact-area p:last-child
+{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   animation   */
+
+@keyframes leftToRight
+{
+    0%{left: -1500px;}
+    100%{left: 0px;}
+}
+
+
+@keyframes rightToLeft
+{
+    0%{right: -1500px;}
+    100%{right: 0px;}
+}
+
+
+
+@keyframes topTobottom
+{
+    0%{top: -1500px;}
+    100%{top: 0px;}
+}
+
+@keyframes bottomTotop
+{
+    0%{bottom: -1500px;}
+    100%{bottom: 0px;}
+}
+
+
