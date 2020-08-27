@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Front End</title>
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--title-icon--------->
+<link rel="shortcut icon" href="images/icon.png">
+<link rel="stylesheet" type="text/css" href="css/font&ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/keyframes.css"/>
+<link rel="stylesheet" type="text/css" href="css/query.css"/>
+<!--using FontAwesome---------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--main------------------------>
+	<section id="main">
+	<!--navigation-------------------------------->
+	<nav>
+	<!--logo--->
+	<a href="index.html" class="logo">Portfolio</a>
+	<!--menu--------->
+	<div class="toggle"></div>
+	<ul class="menu">
+        <li class="active"><a href="index.html" >Home</a></li>		
+        <li><a href="#portfolio">Portfolio</a></li>		
+        <li><a href="#contact-form">Contact</a></li>	
+	</ul>
+	<!--language-->
+	<a href="#" class="lang">En</a>
+	</nav>
+	
+	!--portfolio Service------------------->
+        <section id="portfolio">
+        <!--heading----------->
+        <h1 class="p-headind">portfolio Service</h1>
+        <!--portfolio-container------------>
+        <div class="p-container">
+        <!--portfolio-box-1-------->
+        <div class="p-box">
+        <!--text--------->
+        <div class="overlay-text">
+        <h1>Writting</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img------------->
+        <img src="images/w1.jpg">
+            
+        </div>
+        <!--portfolio-box-2-------->
+        <div class="p-box">
+            <!--text--------->
+        <div class="overlay-text">
+        <h1>Ideas</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img------------->
+        <img src="images/w2.jpg">
+        </div>
+        <!--portfolio-box-3-------->
+        <div class="p-box">
+        <!--text--------->
+        <div class="overlay-text">
+        <h1>Music</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img------------->
+        <img src="images/w3.jpg">
+        </div>
+        <!--portfolio-box-4-------->
+        <div class="p-box">
+        <!--text--------->
+        <div class="overlay-text">
+        <h1>Time</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img------------->	
+        <img src="images/w4.jpg">
+        </div>
+        <!--portfolio-box-5-------->
+        <div class="p-box">
+        <!--text--------->
+        <div class="overlay-text">
+        <h1>Creative</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img------------->	
+        <img src="images/w5.jpg">
+        </div>
+        <!--portfolio-box-6-------->
+        <div class="p-box">
+        <!--text--------->
+        <div class="overlay-text">
+        <h1>Books</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img------------->	
+        <img src="images/w6.jpg">
+        </div>
+            
+        </div>
+        </section>
+	<!--Contact-btn------------------>
+	<section id="contact-btn">
+	<!--heading-------------->
+	<h1 class="c-b-heading">If You Have Any Project In Your Mind ?</h1>
+	<!--btn-------->
+		<button >Contact Me</button>
+	</section>
+	<!--contact-form------------------->
+	<section id="contact-form">
+	<form>
+	<!--left--------------------------------------->
+	<div class="contact-left">
+	<h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Writ</font>e us</h1>
+	<!--name-------->
+	<div class="f-name">
+	<font >Name</font>
+	<input type="text" placeholder="Full Name"/>
+	</div>
+	<!--email-------->
+	<div class="f-email">
+	<font >Email</font>
+	<input type="email" placeholder="Example@gmail.com"/>
+	</div>
+	</div>
+	<!--right------------------------------------------->
+	<div class="contact-right">
+	<!--message-------->
+	<div class="message">
+	<font>Message</font>
+	<textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+	</div>
+	<!--submit-btn------------>
+	<button>submit</button>
+	</div>
+		
+	</form>
+	
+	</section>
+	
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<script type="text/javascript">
+	
+		  /*Responsive Navigation*/
+	  $(document).ready(function(){
+	 $('.toggle').click(function(){
+		 $('.toggle').toggleClass('active')
+		 
+		 $('nav ul').toggleClass('active-menu')
+		
+		 
+	 })
+ });
+	
+	</script>
+</body>
+</html>
